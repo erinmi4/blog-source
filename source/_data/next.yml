@@ -1,0 +1,67 @@
+# ===============================================================
+# 主题设置
+# ===============================================================
+
+# 主题
+# 可用的主题: Muse | Mist | Pisces | Gemini
+scheme: Gemini
+
+# 菜单项
+menu:
+  home: / || fa fa-home
+  archives: /archives/ || fa fa-archive
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  about: /about/ || fa fa-user
+
+# 侧栏头像
+avatar:
+  url: /images/avatar.jpg
+  rounded: true
+  rotated: false
+
+# 社交链接
+social:
+  GitHub: https://github.com/您的用户名 || fab fa-github
+  E-Mail: mailto:您的邮箱 || fa fa-envelope
+  
+# 文章设置
+post_meta:
+  item_text: true
+  created_at: true
+  updated_at: true
+  categories: true
+
+# 代码块设置
+codeblock:
+  highlight_theme: night bright
+  copy_button:
+    enable: true
+
+# 阅读进度条
+reading_progress:
+  enable: true
+  color: "#37c6c0"
+  height: 2px
+
+# 页面顶部进度条
+pace:
+  enable: true
+  theme: minimal
+
+# 回到顶部按钮
+back2top:
+  enable: true
+  sidebar: false
+  scrollpercent: true
+
+# 本地搜索
+local_search:
+  enable: true
+
+# 站点统计
+busuanzi_count:
+  enable: true
+  site_uv: true
+  site_pv: true
+  post_views: true

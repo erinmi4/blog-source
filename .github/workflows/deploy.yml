@@ -1,0 +1,42 @@
+name: Deploy Hexo Blog
+
+on:
+  push:
+    branches:
+      - main  # 当源码仓库的 main 分支收到推送时触发
+  schedule:
+    - cron: '0 */12 * * *'  # 每12小时自动构建一次，您可以根据需要调整
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v3
+        with:
+          ref: main  # 检出 main 分支的源码
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Clean and Build
+        run: |
+          npx hexo clean
+          npx hexo generate
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: main  # 部署到 GitHub Pages 的分支
+          publish_dir: ./public
+          external_repository: erinmi4/erinmi4.github.io
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Site updated: ${{ github.event.head_commit.timestamp }}'
