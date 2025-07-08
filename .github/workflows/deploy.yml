@@ -5,7 +5,7 @@ on:
     branches:
       - main  # 当源码仓库的 main 分支收到推送时触发
   schedule:
-    - cron: '0 */12 * * *'  # 每12小时自动构建一次，您可以根据需要调整
+    - cron: '*/30 * * * *'  # 每30分钟自动构建一次
 
 jobs:
   build-and-deploy:
