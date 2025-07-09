@@ -1,25 +1,31 @@
 ---
-title: 关于我
-date: 2025-07-08 20:47:16
+title: All about me
+date: 2025-07-08 20:52:27
+type: "about"
+layout: "about"
 ---
 
-## 个人介绍
+## 关于我
 
-大家好，我是[您的名字]，这是我的个人博客。
+你好，我是Mika，我是一名热爱技术和分享的博主。
 
-## 专业技能
+### 我的技能
 
-- 技能1
-- 技能2
-- 技能3
+- 编程语言：[C, Python, Java]
+- 其他技能：[嵌入式开发, 机器学习，日语]
 
-## 兴趣爱好
+### 教育背景
 
-- 爱好1
-- 爱好2
-- 爱好3
+- [湘潭大学](https://www.xtu.edu.cn/) - 通信工程 - 学士 - 2026
 
-## 联系方式
 
-- Email: your.email@example.com
-- GitHub: [您的GitHub](https://github.com/您的用户名)
+
+
+### 联系方式
+
+- GitHub: [https://github.com/erinmi4](https://github.com/erinmi4)
+- 邮箱：[我的Gmail](mailto:mikasa2511592510@gmail.com)
+
+---
+
+This is my personal blog where I share my thoughts, projects, and experiences. Feel free to explore and connect with me!
